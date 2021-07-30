@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Manager</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:rgb(13, 12, 17);
+            color:white;
+        }
+        .Container{
+            width:250px;
+            text-align: center;
+            border-radius:10;
+            margin:auto;
+        }
+        button{
+            width:100%;
+        }
+    </style>
+    <form class="Container" action="index" method="POST" enctype="multipart/form-data" >
+        {% csrf_token %}
+        <h2>Fund Manager</h2>
+        <input type="file" name="csv" id=""><br><br>
+        <input type="submit">Submit</input>
+    </form>
+    
+</body>
+</html>
